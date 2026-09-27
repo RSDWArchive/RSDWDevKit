@@ -1,6 +1,0 @@
-CheatManagerEnablerMod : 1
-ConsoleCommandsMod : 1
-ConsoleEnablerMod : 1
-BPML_GenericFunctions : 1
-BPModLoaderMod : 1
-RSDWTools : 1

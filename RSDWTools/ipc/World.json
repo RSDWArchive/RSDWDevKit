@@ -1,0 +1,1047 @@
+{
+  "version": 5,
+  "folders": [
+    {
+      "name": "Engine Controls",
+      "mods": [
+        {
+          "name": "Normal",
+          "class": "WorldSettings",
+          "reach_spec": "world.PersistentLevel.WorldSettings",
+          "field": "TimeDilation",
+          "value": "1.0",
+          "type": "float",
+          "ue_type": "float",
+          "kind": "set"
+        },
+        {
+          "name": "Slomo (10%)",
+          "class": "WorldSettings",
+          "reach_spec": "world.PersistentLevel.WorldSettings",
+          "field": "TimeDilation",
+          "value": "0.1",
+          "type": "float",
+          "ue_type": "float",
+          "kind": "set"
+        },
+        {
+          "name": "Pause",
+          "class": "WorldSettings",
+          "reach_spec": "world.PersistentLevel.WorldSettings",
+          "field": "TimeDilation",
+          "value": "0.000001",
+          "type": "float",
+          "ue_type": "float",
+          "kind": "set"
+        },
+        {
+          "name": "Double (200%)",
+          "class": "WorldSettings",
+          "reach_spec": "world.PersistentLevel.WorldSettings",
+          "field": "TimeDilation",
+          "value": "2.0",
+          "type": "float",
+          "ue_type": "float",
+          "kind": "set"
+        },
+        {
+          "name": "Fast Forward (100x)",
+          "class": "WorldSettings",
+          "reach_spec": "world.PersistentLevel.WorldSettings",
+          "field": "TimeDilation",
+          "value": "100.0",
+          "type": "float",
+          "ue_type": "float",
+          "kind": "set"
+        },
+        {
+          "name": "Half Time",
+          "class": "WorldSettings",
+          "reach_spec": "world.PersistentLevel.WorldSettings",
+          "field": "TimeDilation",
+          "value": "0.5",
+          "type": "float",
+          "ue_type": "float",
+          "kind": "set"
+        }
+      ],
+      "show_apply_all": false,
+      "color": "#E0C04F"
+    }
+  ],
+  "kits": [
+    {
+      "name": "Time Controls",
+      "folders": [
+        {
+          "name": "Day Time",
+          "mods": [
+            {
+              "name": "Day",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.time 1",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Day Time: Active",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#E0C04F"
+        },
+        {
+          "name": "Night Time",
+          "mods": [
+            {
+              "name": "Night",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.time 0",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Night Time: Active",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ]
+        },
+        {
+          "name": "Pause Time (768 Minute Days - 12.8 IRL Hours)",
+          "mods": [
+            {
+              "name": "768 Minute Days",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.time.speed 768",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Pause Time: Active",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#A07050"
+        },
+        {
+          "name": "Reset Time (24 Minute Days - Default)",
+          "mods": [
+            {
+              "name": "24 Minute Days",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.time.speed 24",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Reset Time: Active",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#A07050"
+        },
+        {
+          "name": "Advance Time (1 Minute Days)",
+          "mods": [
+            {
+              "name": "1 Minute Days",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.time.speed 1",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Advance Time: Active",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#A07050"
+        },
+        {
+          "name": "Advance Time \u002B1 Day (Use for Farming)",
+          "mods": [
+            {
+              "name": "\u002B1 Day",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.storedtime 24",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Time \u002B1 Day",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#7FBF45"
+        }
+      ],
+      "show_apply_all": false,
+      "color": "#9E9E9E",
+      "sub_kits": [
+        {
+          "name": "Precision Time-of-Day Controls",
+          "folders": [
+            {
+              "name": "Controls by the Hour",
+              "mods": [
+                {
+                  "name": "Hour 0",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 0",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 1",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .1",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 2",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .2",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 3",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .3",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 4 (Dawn)",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .4",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 5 (Sunrise)",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .5",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 6",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .6",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 7",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .7",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 8",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .8",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 9",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time .9",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 10",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.0",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 11",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.1",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 12 (Noon)",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.2",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 13",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.3",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 14",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.4",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 15",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.5",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 16",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.6",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 17",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.7",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 18 (Sunset)",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.8",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 19 (Night)",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 1.9",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                },
+                {
+                  "name": "Hour 20 (Same as Hour 0)",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.time 2.0",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "show_apply_all": false
+            }
+          ],
+          "show_apply_all": false,
+          "color": "#E0584F",
+          "sub_kits": []
+        }
+      ]
+    },
+    {
+      "name": "Weather Controls",
+      "folders": [
+        {
+          "name": "Weather - Set Sunny",
+          "mods": [
+            {
+              "name": "Sunny",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Sunny",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Sunny - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#E0C04F"
+        },
+        {
+          "name": "Weather - Set Light Rain",
+          "mods": [
+            {
+              "name": "Light Rain",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Rain_Light",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Light Rain - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#3FA3A3"
+        },
+        {
+          "name": "Weather - Set Heavy Rain",
+          "mods": [
+            {
+              "name": "Heavy Rain",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Rain_Heavy",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Heavy Rain - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#4F8FE0"
+        },
+        {
+          "name": "Weather - Set Storm",
+          "mods": [
+            {
+              "name": "Storm",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Rain_Storm",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Storm - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#2E5A8C"
+        },
+        {
+          "name": "Weather - Set Lightning Storm",
+          "mods": [
+            {
+              "name": "Lightning Storm",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Rain_LightningStorm",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Lightning Storm - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#E08A4F"
+        },
+        {
+          "name": "Weather - Set Foggy",
+          "mods": [
+            {
+              "name": "Foggy",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Fog",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Foggy - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#C04FB0"
+        },
+        {
+          "name": "Weather - Set Cloudy",
+          "mods": [
+            {
+              "name": "Cloudy",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Cloudy",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Cloudy - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#9E9E9E"
+        },
+        {
+          "name": "Weather - Set Sandstorm",
+          "mods": [
+            {
+              "name": "Sandstorm",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Sandstorm",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            }
+          ],
+          "color": "#C2A56B"
+        },
+        {
+          "name": "Weather - Set Velgar (Yes, Velgar is a weather mode... idk)",
+          "mods": [
+            {
+              "name": "Velgar Mode",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.weather.regional Velgar_BossFight",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Weather: Velgar - Please Wait.",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "3"
+            }
+          ],
+          "color": "#E0584F"
+        }
+      ],
+      "show_apply_all": false,
+      "color": "#7B5FE0",
+      "sub_kits": []
+    },
+    {
+      "name": "Foliage Controls",
+      "folders": [],
+      "show_apply_all": false,
+      "color": "#5A8C5A",
+      "sub_kits": [
+        {
+          "name": "Tree Nuker (Around your Player)",
+          "folders": [
+            {
+              "name": "Nukes only Trees (Be Careful)",
+              "mods": [
+                {
+                  "name": "On-screen text",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "Deleting All Trees. Please Wait",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "umg",
+                  "umg_duration": "3"
+                },
+                {
+                  "name": "Only Trees, Bye",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.destroy.all confirm treeonly unbounded",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "color": "#5A8C5A"
+            },
+            {
+              "name": "Nukes only Saplings (Be Careful)",
+              "mods": [
+                {
+                  "name": "On-screen text",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "Deleting All Saplings. Please Wait",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "umg",
+                  "umg_duration": "3"
+                },
+                {
+                  "name": "Only Saps, Bye",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.destroy.all confirm saplings unbounded",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "color": "#7FBF45"
+            },
+            {
+              "name": "Nukes All Trees and Saplings (Be Careful)",
+              "mods": [
+                {
+                  "name": "On-screen text",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "Deleting All Trees and Saplings. Please Wait",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "umg",
+                  "umg_duration": "3"
+                },
+                {
+                  "name": "Everything, Bye",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.destroy.all confirm unbounded",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "color": "#E0584F"
+            },
+            {
+              "name": "Stumps Every Loaded Tree",
+              "mods": [
+                {
+                  "name": "On-screen text",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "Stumping. Please Wait.",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "umg",
+                  "umg_duration": "3"
+                },
+                {
+                  "name": "All is Stump",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.stump.all confirm unbounded",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "color": "#E08A4F"
+            },
+            {
+              "name": "Splits Every Loaded Tree",
+              "mods": [
+                {
+                  "name": "On-screen text",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "Splitting. Please Wait.",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "umg",
+                  "umg_duration": "3"
+                },
+                {
+                  "name": "All is Split",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.split.all confirm unbounded",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "color": "#E08A4F"
+            }
+          ],
+          "show_apply_all": false,
+          "color": "#E0584F",
+          "sub_kits": []
+        },
+        {
+          "name": "Target Foliage (Place Reticle on Tree)",
+          "folders": [
+            {
+              "name": "Single Delete (Look at a Tree, Delete it)",
+              "mods": [
+                {
+                  "name": "This Tree Specifically, Bye",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.tree.destroy.single",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "color": "#5A8C5A"
+            },
+            {
+              "name": "Group Delete (Look at a Tree, Nearby Tree\u0027s also Deleted)",
+              "mods": [
+                {
+                  "name": "Some Trees, Bye",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.destroy.lookat 2500 50",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ],
+              "color": "#E0C04F"
+            },
+            {
+              "name": "Stumper (Single)",
+              "mods": [
+                {
+                  "name": "You are Stump now",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.tree.stump.single",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ]
+            },
+            {
+              "name": "Stumper (Group)",
+              "mods": [
+                {
+                  "name": "You are all Stumps",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.stump.lookat 2500 50 redundant",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ]
+            },
+            {
+              "name": "Splitter (Single)",
+              "mods": [
+                {
+                  "name": "Chopped",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.tree.split.single",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ]
+            },
+            {
+              "name": "Splitter (Group)",
+              "mods": [
+                {
+                  "name": "Extra Chopped",
+                  "class": "",
+                  "reach_spec": "",
+                  "field": "",
+                  "value": "world.foliage.forest.split.lookat 2500 50 redundant",
+                  "type": "",
+                  "ue_type": "",
+                  "kind": "raw"
+                }
+              ]
+            }
+          ],
+          "show_apply_all": false,
+          "color": "#4F8FE0",
+          "sub_kits": []
+        }
+      ]
+    },
+    {
+      "name": "AI Controls",
+      "folders": [
+        {
+          "name": "Pause AI",
+          "mods": [
+            {
+              "name": "Pause AI",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.foreach DominionAICharacter set CustomTimeDilation 0",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Nearby AI: Paused",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "2"
+            }
+          ]
+        },
+        {
+          "name": "Unpause AI",
+          "mods": [
+            {
+              "name": "Unpause AI",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.foreach DominionAICharacter set CustomTimeDilation 1.0",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "Nearby AI: Play",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "2"
+            }
+          ],
+          "hotkey_mode": "toggle"
+        },
+        {
+          "name": "Delete All AI",
+          "mods": [
+            {
+              "name": "Bye",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "world.foreach DominionAICharacter call K2_DestroyActor 1",
+              "type": "",
+              "ue_type": "",
+              "kind": "raw"
+            },
+            {
+              "name": "On-screen text",
+              "class": "",
+              "reach_spec": "",
+              "field": "",
+              "value": "All Nearby AI Destroyed",
+              "type": "",
+              "ue_type": "",
+              "kind": "umg",
+              "umg_duration": "2"
+            }
+          ],
+          "color": "#E0584F"
+        }
+      ],
+      "show_apply_all": false,
+      "color": "#E0584F",
+      "sub_kits": []
+    }
+  ]
+}

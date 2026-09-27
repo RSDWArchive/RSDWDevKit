@@ -1,0 +1,63 @@
+{
+  "schema": "rsdwtools.compatibility.v1",
+  "game": "1.0.0.4",
+  "engine": "5.6.1",
+  "ue4ss": "f6d5f942",
+  "target_cl": "243922",
+  "reference_cl": "240163",
+  "candidate": "unverified-reference-mismatch",
+  "live_verified": false,
+  "source_hashes": {
+    "cxx": {
+      "sha256": "6ef0c0151c7e71fa36ac49e1188557cbabbad187fbc0b1cb16468546e70db7c7",
+      "files": 2340
+    },
+    "uht": {
+      "sha256": "463d09573608f476b3e133760c15d27cafa1ade85f4dc9937e6591f2601605d6",
+      "files": 34802
+    },
+    "types": {
+      "sha256": "ed13e808d2c18e3ac5972a327b64ea6d271c9a752ec623da33da910c5d64c2f4",
+      "files": 2340
+    },
+    "objects": {
+      "sha256": "ca553074f6383df495a634a6732411ba962084fe69a2c482912f807500bdefe9",
+      "bytes": 56543931,
+      "modified_utc": "2026-09-15T09:18:08.159600+00:00"
+    },
+    "library": {
+      "sha256": "c3e1b36d6ad2e1ce0488b537513ce48e1d851d694a80b7342a8c79097a26902e",
+      "bytes": 3111358464,
+      "modified_utc": "2026-09-17T22:47:02.981453+00:00"
+    },
+    "Dump-WorldActorDescendants.py": {
+      "sha256": "23ff1828d2cb5c1f9c2fe21ea900722f59ae9a3982decada46962c4a45b67798",
+      "bytes": 8163,
+      "modified_utc": "2026-05-15T09:42:03.812593+00:00"
+    },
+    "Build-WorldActorBPData.py": {
+      "sha256": "577f08005dd1ccf1581edd6267ebfd52b8d0a5404fada8733ac20e8f99dcf531",
+      "bytes": 10000,
+      "modified_utc": "2026-05-16T03:59:50.183190+00:00"
+    },
+    "Dump-WorldActorShapes.py": {
+      "sha256": "e057e9dfccd488055e1e6a8b5f11b54b85aa1a28c252365d4894f3d40bbb1eb4",
+      "bytes": 13262,
+      "modified_utc": "2026-05-15T18:47:23.007052+00:00"
+    }
+  },
+  "catalogs": {
+    "SpawnCatalog.json": "b536e651346e9108f19a3b1b9a638e8786028e3cffb3df0045a05155db4a48a0",
+    "NpcActionCatalog.json": "35368aa4ba0b790888e0260b9ce2b014d004e9099f3daf0492c212d4cbdbf632",
+    "PlayerAnimationCatalog.json": "1fff2ab7c31bc3b9b8fb7e7982bd790a3ab6b71a81c8ae62f1c5ba5502ab5ebc"
+  },
+  "legacy_catalog_baseline_sha256": "9b8b730b2a72e3f9d538a66606bdd3e7e6cde859e88b586740c712250f8f3d91",
+  "source_revision": "af6efdc4d1b8cdaf34235eb01af8de590d17c717",
+  "source_dirty": true,
+  "limitations": [
+    "Reference CL differs from installed target; in-game verification pending.",
+    "Force Place lacks a reflected preview transform. Preview delivery uses a one-shot native placement RPC; in-game validation pending.",
+    "Index-only legacy captures require a verified source mapping.",
+    "Direct ghost completion and removed player/mount fields are unsupported."
+  ]
+}

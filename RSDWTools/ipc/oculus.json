@@ -1,0 +1,194 @@
+{
+  "version": 6,
+  "sections": [
+    {
+      "name": "Init",
+      "gate": "init",
+      "commands": [
+        {
+          "name": "Unlock Distance",
+          "verb": "camera.oculus.distance 999999 999999"
+        },
+        {
+          "name": "Default Speed",
+          "verb": "camera.oculus.speed 1200 4000 8000"
+        },
+        {
+          "name": "NoClip",
+          "verb": "player.field.set pawn.OculusComponent.OculusPawn bActorEnableCollision false",
+          "verb_off": "player.field.set pawn.OculusComponent.OculusPawn bActorEnableCollision true"
+        },
+        {
+          "name": "Hide Vignette",
+          "verb": "camera.oculus.vignette off"
+        },
+        {
+          "name": "Hide Watermark",
+          "verb": "camera.oculus.watermark off"
+        },
+        {
+          "name": "Save Building Costs",
+          "verb": "world.buildings.requirements save"
+        },
+        {
+          "name": "Clear Building Costs",
+          "verb": "world.buildings.requirements clear"
+        },
+        {
+          "name": "Placement Distance",
+          "verb": "player.field.set controller.BuildPlacementComponent MaxPlacementDistance 1000.0"
+        },
+        {
+          "name": "No Damage",
+          "verb": "player.field.set pawn.PlayerDamageComponent bCanTakeDamage false"
+        },
+        {
+          "name": "Oculus Pause",
+          "verb": "camera.oculus.freeze.settings on 0.000001 1000000.0 3000000.0"
+        }
+      ]
+    },
+    {
+      "name": "Inactive",
+      "gate": "inactive",
+      "commands": [
+        {
+          "name": "Start",
+          "verb": "camera.oculus.start",
+          "hotkey": "INS"
+        }
+      ]
+    },
+    {
+      "name": "Active",
+      "gate": "active",
+      "commands": [
+        {
+          "name": "Camera Speed",
+          "verb": "camera.oculus.speed 3600 12000 24000",
+          "verb_off": "camera.oculus.speed 1200 4000 8000",
+          "verbs": [
+            "camera.oculus.speed 3600 12000 24000"
+          ],
+          "verbs_off": [
+            "camera.oculus.speed 1200 4000 8000"
+          ],
+          "umg_text": "Fast (3x)",
+          "umg_text_off": "Default",
+          "hotkey": "ONE",
+          "hotkey_mode": "toggle"
+        },
+        {
+          "name": "HUD",
+          "verb": "player.field.call hud ShowHUD",
+          "verb_off": "player.field.call hud ShowHUD",
+          "verbs": [
+            "player.field.call hud ShowHUD",
+            "camera.oculus.watermark off",
+            "camera.oculus.help off"
+          ],
+          "verbs_off": [
+            "player.field.call hud ShowHUD",
+            "camera.oculus.help on"
+          ],
+          "umg_text": "Hidden",
+          "umg_text_off": "Visible",
+          "hotkey": "TWO",
+          "hotkey_mode": "toggle"
+        },
+        {
+          "name": "Time",
+          "verb": "world.time 1.0",
+          "verb_off": "world.time 0",
+          "umg_text": "Toggle",
+          "umg_text_off": "Toggle",
+          "hotkey": "THREE",
+          "hotkey_mode": "toggle"
+        },
+        {
+          "name": "Weather",
+          "verb": "world.weather.regional Sunny",
+          "verbs": [
+            "world.weather.regional Sunny",
+            "umg 3 Setting Sunny: Please Wait"
+          ],
+          "umg_text": "Sunny",
+          "hotkey": "FOUR"
+        },
+        {
+          "name": "Pause",
+          "verb": "camera.oculus.pause toggle",
+          "umg_text": "Toggle",
+          "hotkey": "FIVE"
+        }
+      ]
+    },
+    {
+      "name": "Build Preview",
+      "gate": "preview",
+      "commands": [
+        {
+          "name": "Rotation",
+          "verb": "world.buildings.rotation.step 1",
+          "verb_off": "world.buildings.rotation.step 15",
+          "umg_text": "1 deg",
+          "umg_text_off": "15 deg",
+          "hotkey": "R",
+          "hotkey_mode": "toggle"
+        },
+        {
+          "name": "Force Place",
+          "verb": "build.preview.force_place",
+          "hotkey": "V"
+        }
+      ]
+    },
+    {
+      "name": "Repair",
+      "gate": "repair",
+      "commands": [
+        {
+          "name": "Inspect",
+          "verb": "camera.lookat",
+          "hotkey": "RIGHT_MOUSE_BUTTON"
+        },
+        {
+          "name": "Preview",
+          "verb": "camera.oculus.preview",
+          "hotkey": "E"
+        },
+        {
+          "name": "Destroy",
+          "verb": "camera.destroy.lookat",
+          "hotkey": "X",
+          "modifiers": [
+            "LEFT_CONTROL",
+            "LEFT_ALT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Exit",
+      "gate": "exit",
+      "commands": [
+        {
+          "name": "Restore Oculus Pause",
+          "verb": "player.field.set worldsettings TimeDilation 1.0",
+          "verbs": [
+            "player.field.set worldsettings TimeDilation 1.0",
+            "player.field.set pawn.OculusComponent.OculusPawn CustomTimeDilation 1.0"
+          ]
+        },
+        {
+          "name": "Restore Building Costs",
+          "verb": "world.buildings.requirements restore"
+        },
+        {
+          "name": "Restore Damage",
+          "verb": "player.field.set pawn.PlayerDamageComponent bCanTakeDamage true"
+        }
+      ]
+    }
+  ]
+}

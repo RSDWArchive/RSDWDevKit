@@ -1,0 +1,34 @@
+{
+  "generated": "2026-09-22T06:53:06Z",
+  "source_types_dir": "F:\\SteamLibrary\\steamapps\\common\\RSDragonwilds\\RSDragonwilds\\Binaries\\Win64\\ue4ss\\Mods\\shared\\types",
+  "classes_total": 17327,
+  "classes_emitted": 868,
+  "enums_total": 2873,
+  "by_bucket": {
+    "subsystems": 150,
+    "data": 59,
+    "other": 247,
+    "components": 284,
+    "gameplay": 6,
+    "actors": 122
+  },
+  "by_root_kind": {
+    "subsystem": 269,
+    "data": 272,
+    "other": 7990,
+    "singleton": 65,
+    "actor_multi": 696,
+    "component": 715,
+    "interface": 402,
+    "gameplay": 16,
+    "struct": 6902
+  },
+  "catalog_file": "catalog.jsonl",
+  "schema_version": 2,
+  "compatibility": {
+    "reference_cl": "240163",
+    "target_cl": "243922",
+    "candidate": "unverified-reference-mismatch",
+    "live_verified": false
+  }
+}
